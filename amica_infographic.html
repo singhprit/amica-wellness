@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amica: Empowering Women's Emotional Well-Being</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#FFF8E1]">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <header class="text-center py-12">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-[#D32F2F]">Amica</h1>
+            <p class="mt-4 text-xl md:text-2xl font-semibold text-[#4CAF50]">Empowering Women's Emotional Well-Being</p>
+            <p class="mt-2 text-lg text-gray-700">A data-driven look into our mission to address the silent mental health crisis in India.</p>
+        </header>
+
+        <main>
+            <section id="crisis" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">The Unspoken Crisis in India</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">Millions of women face significant mental and emotional challenges with limited access to formal care. The scale of the problem is staggering.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-[#D32F2F]">47%</h3>
+                        <p class="font-semibold text-gray-700 mt-1">Report Insomnia & Sleep Issues</p>
+                        <div class="chart-container h-56 max-h-64 mx-auto mt-4"><canvas id="insomniaChart"></canvas></div>
+                        <p class="text-sm text-gray-500 mt-2">Nearly half of women aged 18-35 struggle with sleep, a key indicator of underlying stress.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-[#D32F2F]">85%</h3>
+                        <p class="font-semibold text-gray-700 mt-1">Mental Health Treatment Gap</p>
+                         <div class="chart-container h-56 max-h-64 mx-auto mt-4"><canvas id="treatmentGapChart"></canvas></div>
+                        <p class="text-sm text-gray-500 mt-2">Up to 85% of women in India lack access to formal mental health care, a gap Amica aims to fill.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-[#D32F2F]">41%</h3>
+                        <p class="font-semibold text-gray-700 mt-1">Feel Socially Isolated</p>
+                         <div class="chart-container h-56 max-h-64 mx-auto mt-4"><canvas id="isolationChart"></canvas></div>
+                        <p class="text-sm text-gray-500 mt-2">A significant portion of women feel disconnected, highlighting the need for community.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution" class="mb-16">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">Our Solution: A New Model of Care</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">Amica provides a safe, accessible, and low-friction support system through WhatsApp, built on three core pillars.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                        <span class="text-5xl mb-4">💬</span>
+                        <h3 class="text-xl font-bold text-[#4CAF50]">Peer Support</h3>
+                        <p class="text-gray-600 mt-2">Connecting women with shared experiences to foster a sense of belonging and reduce isolation.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                         <span class="text-5xl mb-4">🎯</span>
+                        <h3 class="text-xl font-bold text-[#4CAF50]">Structured Activities</h3>
+                        <p class="text-gray-600 mt-2">Goal-oriented programs and challenges that provide a clear path towards improved well-being.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                         <span class="text-5xl mb-4">🛠️</span>
+                        <h3 class="text-xl font-bold text-[#4CAF50]">Mental Health Tools</h3>
+                        <p class="text-gray-600 mt-2">Providing practical, evidence-based tools and techniques for managing stress and anxiety.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="traction" class="mb-16">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">Early Momentum & Key Insights</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">Our initial pilot has demonstrated strong interest and revealed crucial insights that are shaping our refined strategy.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center justify-center text-center">
+                        <p class="text-7xl font-extrabold text-[#4CAF50]">68</p>
+                        <p class="mt-2 text-2xl font-semibold text-gray-800">Women Onboarded</p>
+                        <p class="mt-2 text-gray-600">Successfully built a foundational community from diverse backgrounds, validating the need for Amica.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Key Learnings & Challenges</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-xl mr-3">⚠️</span><span><strong class="font-semibold">Variable Engagement:</strong> Participation is uneven, requiring a more structured approach.</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3">🗺️</span><span><strong class="font-semibold">Unstructured Conversations:</strong> Lack of a clear, goal-oriented path for members.</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3">👥</span><span><strong class="font-semibold">Scaling Personal Support:</strong> Difficult to provide individual attention in a large group.</span></li>
+                            <li class="flex items-start"><span class="text-xl mr-3">🔒</span><span><strong class="font-semibold">Privacy & Safety:</strong> Sensitive topics require a private, safe space.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="goals" class="mb-16">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">Our Strategic Focus for 2025</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">Based on member feedback and research, we are prioritizing five key areas to maximize our impact on women's well-being.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="chart-container h-96 max-h-[450px]"><canvas id="strategicGoalsChart"></canvas></div>
+                </div>
+            </section>
+
+             <section id="program" class="mb-16">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">The 30-Day "Stress & Sleep Reset" Challenge</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">Our new structured program provides a clear, actionable path for members, featuring a consistent weekly rhythm.</p>
+                </div>
+                 <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#4CAF50] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Week 1: Awareness</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Focus on mood check-ins and building a baseline understanding of personal stressors.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#4CAF50] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Week 2: Stress Relief Tools</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Introduce practical techniques like mindful breathing, walking, and reflection exercises.</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#4CAF50] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Week 3: Sleep Hygiene</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Implement relaxation techniques and habits to improve sleep quality and duration.</p>
+                        </div>
+                    </div>
+                     <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#4CAF50] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="font-bold text-gray-800 text-xl">Week 4: Integration</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Reflect on progress and build a commitment to maintaining new, healthy habits.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section id="kpis" class="mb-16">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">Measuring Success: Our Key Performance Indicators</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">We are focused on clear, measurable outcomes to track our progress and ensure we are making a real difference in women's lives.</p>
+                </div>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-gray-800 text-xl mb-2">Weekly Poll Participation</h3>
+                        <div class="chart-container h-64 max-h-72"><canvas id="participationKpiChart"></canvas></div>
+                        <p class="text-sm text-gray-500 mt-2">Aim for 80-90% participation to ensure consistent community engagement.</p>
+                     </div>
+                     <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-gray-800 text-xl mb-2">30-Day Challenge Completion</h3>
+                        <div class="chart-container h-64 max-h-72"><canvas id="completionKpiChart"></canvas></div>
+                        <p class="text-sm text-gray-500 mt-2">Targeting 50% completion rate for our structured programs.</p>
+                     </div>
+                 </div>
+             </section>
+
+             <section id="vision" class="mb-16">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">Our 6-Month Vision: Scaling for Impact</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">Our roadmap focuses on scaling our community, expanding our offerings, and building strategic partnerships to amplify our reach.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                     <div class="chart-container h-96 max-h-[450px]"><canvas id="growthChart"></canvas></div>
+                </div>
+            </section>
+
+            <section id="architecture" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-[#3E2723]">A Scalable Community Architecture</h2>
+                    <p class="mt-2 text-gray-600 max-w-3xl mx-auto">Our hub-and-spoke model allows for both large-scale engagement and intimate, focused support through specialized sub-groups.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-[#4CAF50] text-white font-bold p-4 rounded-lg shadow-md">Amica Hub (Main Group)</div>
+                        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                            <div class="flex flex-col items-center">
+                                <div class="w-px h-8 bg-gray-400"></div>
+                                <div class="bg-[#FFC107] text-gray-800 p-3 rounded-lg shadow-md text-center">Amica SelfCare<br><span class="text-sm font-normal">(Sleep & Stress Reset)</span></div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-px h-8 bg-gray-400"></div>
+                                <div class="bg-[#FFC107] text-gray-800 p-3 rounded-lg shadow-md text-center">Amica WorkLife<br><span class="text-sm font-normal">(Working Women Stress)</span></div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-px h-8 bg-gray-400"></div>
+                                <div class="bg-[#FFC107] text-gray-800 p-3 rounded-lg shadow-md text-center">Amica Moms<br><span class="text-sm font-normal">(Postpartum & Parenting)</span></div>
+                            </div>
+                             <div class="flex flex-col items-center">
+                                <div class="w-px h-8 bg-gray-400"></div>
+                                <div class="bg-[#FFC107] text-gray-800 p-3 rounded-lg shadow-md text-center">Other Focus Tracks<br><span class="text-sm font-normal">(As demand grows)</span></div>
+                            </div>
+                        </div>
+                         <div class="mt-4 text-sm text-gray-600 text-center">Each focus track can be further broken down into micro-cohorts for personalized support.</div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-12">
+             <h2 class="text-3xl font-bold text-[#3E2723]">Together, We Can Change Lives</h2>
+             <p class="mt-4 text-xl font-semibold text-[#D32F2F]">Amica: Empowering women, one conversation at a time.</p>
+        </footer>
+
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const brandColors = {
+        primary: '#4CAF50',
+        secondary: '#FFC107',
+        accent: '#D32F2F',
+        lightBg: '#FFF8E1',
+        darkText: '#3E2723',
+        gray: '#E0E0E0'
+    };
+
+    const tooltipConfig = {
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    title: function(tooltipItems) {
+                        const item = tooltipItems[0];
+                        let label = item.chart.data.labels[item.dataIndex];
+                        if (Array.isArray(label)) {
+                          return label.join(' ');
+                        } else {
+                          return label;
+                        }
+                    }
+                }
+            },
+            legend: {
+                display: false
+            }
+        }
+    };
+
+    function wrapLabel(label, maxLength = 16) {
+        if (label.length <= maxLength) {
+            return label;
+        }
+        const words = label.split(' ');
+        const lines = [];
+        let currentLine = '';
+        words.forEach(word => {
+            if ((currentLine + ' ' + word).trim().length > maxLength) {
+                lines.push(currentLine.trim());
+                currentLine = word;
+            } else {
+                currentLine = (currentLine + ' ' + word).trim();
+            }
+        });
+        if (currentLine) {
+            lines.push(currentLine.trim());
+        }
+        return lines;
+    }
+
+    new Chart(document.getElementById('insomniaChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Report Insomnia', 'Do Not'],
+            datasets: [{
+                data: [47, 53],
+                backgroundColor: [brandColors.accent, brandColors.gray],
+                borderColor: brandColors.lightBg,
+                borderWidth: 4
+            }]
+        },
+        options: { ...tooltipConfig, responsive: true, maintainAspectRatio: false }
+    });
+
+    new Chart(document.getElementById('treatmentGapChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Lack Access to Care', 'Have Access'],
+            datasets: [{
+                data: [85, 15],
+                backgroundColor: [brandColors.accent, brandColors.gray],
+                borderColor: brandColors.lightBg,
+                borderWidth: 4
+            }]
+        },
+        options: { ...tooltipConfig, responsive: true, maintainAspectRatio: false }
+    });
+
+    new Chart(document.getElementById('isolationChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Feel Isolated', 'Do Not'],
+            datasets: [{
+                data: [41, 59],
+                backgroundColor: [brandColors.accent, brandColors.gray],
+                borderColor: brandColors.lightBg,
+                borderWidth: 4
+            }]
+        },
+        options: { ...tooltipConfig, responsive: true, maintainAspectRatio: false }
+    });
+
+    const strategicGoalsLabels = [
+        'Stress & Anxiety Management',
+        'Sleep Improvement',
+        'Perinatal / Postpartum Mental Health',
+        'Safety & Domestic Violence Support',
+        'Workplace Stress / Burnout'
+    ].map(label => wrapLabel(label));
+
+    new Chart(document.getElementById('strategicGoalsChart'), {
+        type: 'bar',
+        data: {
+            labels: strategicGoalsLabels,
+            datasets: [{
+                label: 'Priority Level',
+                data: [95, 90, 85, 80, 75],
+                backgroundColor: [
+                    'rgba(76, 175, 80, 0.8)',
+                    'rgba(255, 193, 7, 0.8)',
+                    'rgba(211, 47, 47, 0.8)',
+                    'rgba(76, 175, 80, 0.6)',
+                    'rgba(255, 193, 7, 0.6)',
+                ],
+                borderColor: [
+                    'rgba(76, 175, 80, 1)',
+                    'rgba(255, 193, 7, 1)',
+                    'rgba(211, 47, 47, 1)',
+                    'rgba(76, 175, 80, 1)',
+                    'rgba(255, 193, 7, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            ...tooltipConfig,
+            responsive: true,
+            maintainAspectRatio: false,
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    title: { display: true, text: 'Importance Score' }
+                }
+            },
+            plugins: {
+                ...tooltipConfig.plugins,
+                legend: { display: false }
+            }
+        }
+    });
+
+     new Chart(document.getElementById('participationKpiChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Target Participation', 'Remaining'],
+            datasets: [{
+                data: [90, 10],
+                backgroundColor: [brandColors.primary, brandColors.gray],
+                borderColor: '#FFFFFF',
+                borderWidth: 4,
+                circumference: 180,
+                rotation: -90
+            }]
+        },
+        options: {
+            ...tooltipConfig,
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                ...tooltipConfig.plugins,
+                title: { display: false }
+            },
+            cutout: '70%'
+        }
+    });
+
+    new Chart(document.getElementById('completionKpiChart'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Target Completion', 'Remaining'],
+            datasets: [{
+                data: [50, 50],
+                backgroundColor: [brandColors.secondary, brandColors.gray],
+                borderColor: '#FFFFFF',
+                borderWidth: 4,
+                circumference: 180,
+                rotation: -90
+            }]
+        },
+        options: {
+            ...tooltipConfig,
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                ...tooltipConfig.plugins,
+                title: { display: false }
+            },
+            cutout: '70%'
+        }
+    });
+
+    new Chart(document.getElementById('growthChart'), {
+        type: 'line',
+        data: {
+            labels: ['Start', 'Month 1', 'Month 2', 'Month 3', 'Month 4', 'Month 5', 'Month 6'],
+            datasets: [{
+                label: 'Active Members',
+                data: [68, 150, 300, 500, 700, 850, 1000],
+                fill: true,
+                backgroundColor: 'rgba(76, 175, 80, 0.2)',
+                borderColor: brandColors.primary,
+                tension: 0.4
+            }]
+        },
+        options: {
+            ...tooltipConfig,
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: { display: true, text: 'Number of Active Members' }
+                }
+            },
+             plugins: {
+                ...tooltipConfig.plugins,
+                legend: { display: false }
+            }
+        }
+    });
+
+});
+</script>
+</body>
+</html>
